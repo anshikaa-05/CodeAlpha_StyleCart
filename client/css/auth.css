@@ -1,0 +1,209 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   AUTH CARD
+=========================== */
+
+.auth-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.auth-card{
+
+    width:420px;
+
+    background:#181818;
+
+    border:1px solid #2c2c2c;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.auth-card h1{
+
+    color:crimson;
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:12px;
+
+}
+
+.auth-card h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.auth-card p{
+
+    color:#bfbfbf;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.auth-card input{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#262626;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.auth-card input:focus{
+
+    border:1px solid crimson;
+
+    box-shadow:0 0 15px rgba(220,20,60,.35);
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.auth-card button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:crimson;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.auth-card button:hover{
+
+    background:#ff1744;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.switch{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#bfbfbf;
+
+}
+
+.switch a{
+
+    color:crimson;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.switch a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:500px){
+
+    .auth-card{
+
+        width:100%;
+
+        padding:30px;
+
+    }
+
+}

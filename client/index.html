@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleCart | Fashion Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            <h1>StyleCart</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="#" onclick="filterCategory('Men'); return false;">Men</a></li>
+<li><a href="#" onclick="filterCategory('Women'); return false;">Women</a></li>
+<li><a href="#" onclick="filterCategory('Accessories'); return false;">Accessories</a></li>
+<li><a href="#" onclick="filterCategory('Footwear'); return false;">Footwear</a></li>
+        </ul>
+
+        <div class="nav-right">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Products">
+
+            <div id="authArea">
+
+                <a href="pages/login.html">
+
+                <button class="login-btn">
+
+                 Login
+
+                </button>
+
+                </a>
+
+            </div> 
+
+            <a href="pages/cart.html">
+                <button id="cartButton">
+                    🛒 Cart (0)
+                </button>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>
+                Discover Your Style
+            </h2>
+
+            <p>
+                Upgrade your wardrobe with premium fashion collections curated specially for you.
+            </p>
+
+            <button class="shop-btn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products">
+
+        <h2 class="section-title">
+            Featured Products
+        </h2>
+
+        <div
+            class="product-grid"
+            id="productContainer">
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <h2 class="section-title">
+            Shop by Category
+        </h2>
+
+        <div class="category-container">
+
+    <div class="category-card" onclick="filterCategory('Men')">
+        <h3>Men</h3>
+    </div>
+
+    <div class="category-card" onclick="filterCategory('Women')">
+        <h3>Women</h3>
+    </div>
+
+    <div class="category-card" onclick="filterCategory('Accessories')">
+        <h3>Accessories</h3>
+    </div>
+
+    <div class="category-card" onclick="filterCategory('Footwear')">
+        <h3>Footwear</h3>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- ================= WHY CHOOSE STYLECART ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+            Why Choose StyleCart?
+        </h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h1>🚚</h1>
+                <h3>Free Shipping</h3>
+                <p>
+                    Fast and reliable delivery on every order.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h1>🔒</h1>
+                <h3>Secure Payments</h3>
+                <p>
+                    100% safe and encrypted transactions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h1>⭐</h1>
+                <h3>Premium Quality</h3>
+                <p>
+                    Only high-quality fashion products.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+
+        <h2 class="section-title">
+            What Our Customers Say
+        </h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    Amazing quality and super fast delivery.
+                    Highly recommended!
+                </p>
+
+                <h4>
+                    — Priya Sharma
+                </h4>
+
+            </div>
+
+            <div class="testimonial">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    Loved the collection! Definitely shopping again.
+                </p>
+
+                <h4>
+                    — Rahul Verma
+                </h4>
+
+            </div>
+
+            <div class="testimonial">
+
+                <h3>⭐⭐⭐⭐⭐</h3>
+
+                <p>
+                    Stylish products at affordable prices.
+                </p>
+
+                <h4>
+                    — Ayesha Khan
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <h2>
+            Stay Updated
+        </h2>
+
+        <p>
+            Subscribe to receive the latest fashion trends and exclusive offers.
+        </p>
+
+        <div class="newsletter-box">
+
+            <input
+                type="email"
+                placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+        <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>StyleCart</h2>
+
+        <p>
+            Fashion that defines your personality.
+        </p>
+
+        <p class="copyright">
+            © 2026 StyleCart. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- ================= SCROLL TO TOP BUTTON ================= -->
+
+    <button id="scrollTop">
+        ↑
+    </button>
+
+    <!-- ================= JAVASCRIPT FILES ================= -->
+
+    <script src="js/products.js"></script>
+
+    <script src="js/cart.js"></script>
+
+    <script src="js/wishlist.js"></script>
+
+    <script src="js/search.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Classic T-Shirt",
+    "price": 999,
+    "image": "images/tshirt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Denim Jacket",
+    "price": 2499,
+    "image": "images/jacket.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 3499,
+    "image": "images/shoes.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Oversized Hoodie",
+    "price": 1999,
+    "image": "images/hoodie.jpg"
+  }
+]
